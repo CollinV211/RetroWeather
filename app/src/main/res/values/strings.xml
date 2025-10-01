@@ -1,0 +1,5 @@
+<resources>
+    <string name="Retro_Weather">Retro Weather</string>
+    <string name="ButMes">View Weather</string>
+    <string name="WelText">Welcome to Retro Weather!</string>
+</resources>

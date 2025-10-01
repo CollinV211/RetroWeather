@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="edu.cofc.android.Retro_Weather.MainActivity"
+    android:layout_marginTop="64dp"
+
+    >
+
+    <TextView
+        android:id="@+id/TodayTextInfo"
+        android:fontFamily="@font/pressstart2pregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day of week and date"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:id="@+id/TodayTemp"
+        android:fontFamily="@font/pressstart2pregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/TodayTextInfo"
+        app:layout_constraintStart_toStartOf="@id/TodayTextInfo"
+        app:layout_constraintEnd_toEndOf="@id/TodayTextInfo"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/TodayImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintTop_toBottomOf="@id/TodayTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        />
+    <ImageView
+        android:id="@+id/TodayAnimation"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-55dp"
+        android:src="@drawable/sun"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/TodayTemp"
+         app:layout_constraintTop_toBottomOf="@+id/TodayTemp" />
+
+    <!-- Next Days -->
+    <!-- Day 1 -->
+    <TextView
+        android:id="@+id/NextDay1"
+        android:fontFamily="@font/pressstart2pregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day#1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/TodayImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/NextTemp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pressstart2pregular"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/NextImage1"
+        app:layout_constraintTop_toTopOf="@id/NextDay1"
+        android:layout_marginStart="32dp"
+        />
+
+    <ImageView
+        android:id="@+id/NextImage1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="@id/NextDay1"
+        app:layout_constraintTop_toTopOf="@id/NextDay1"
+        android:layout_marginTop="-16dp"
+        android:layout_marginStart="32dp"
+        />
+
+
+
+    <!-- Day 2 -->
+    <TextView
+        android:id="@+id/NextDay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day#2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/NextDay1"
+        app:layout_constraintStart_toStartOf="@id/NextDay1"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <ImageView
+        android:id="@+id/NextImage2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="@id/NextDay2"
+        app:layout_constraintTop_toTopOf="@id/NextDay2"
+        android:layout_marginTop="-16dp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <TextView
+        android:id="@+id/NextTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/NextImage2"
+        app:layout_constraintTop_toTopOf="@id/NextDay2"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <!-- Day 3 -->
+    <TextView
+        android:id="@+id/NextDay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day#3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/NextDay2"
+        app:layout_constraintStart_toStartOf="@id/NextDay2"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <ImageView
+        android:id="@+id/NextImage3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="@id/NextDay3"
+        app:layout_constraintTop_toTopOf="@id/NextDay3"
+        android:layout_marginTop="-16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/NextTemp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/NextImage3"
+        app:layout_constraintTop_toTopOf="@id/NextDay3"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <!-- Day 4 -->
+    <TextView
+        android:id="@+id/NextDay4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day#4"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/NextDay3"
+        app:layout_constraintStart_toStartOf="@id/NextDay3"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <ImageView
+        android:id="@+id/NextImage4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="@id/NextDay4"
+        app:layout_constraintTop_toTopOf="@id/NextDay4"
+        android:layout_marginTop="-16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/NextTemp4"
+        android:fontFamily="@font/pressstart2pregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/NextImage4"
+        app:layout_constraintTop_toTopOf="@id/NextDay4"
+        android:layout_marginStart="32dp"/>
+
+    <!-- Day 5 -->
+    <TextView
+        android:id="@+id/NextDay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day#5"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/NextDay4"
+        app:layout_constraintStart_toStartOf="@id/NextDay4"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <ImageView
+        android:id="@+id/NextImage5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="@id/NextDay5"
+        app:layout_constraintTop_toTopOf="@id/NextDay5"
+        android:layout_marginTop="-16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/NextTemp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/NextImage5"
+        app:layout_constraintTop_toTopOf="@id/NextDay5"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <!-- Day 6 -->
+    <TextView
+        android:id="@+id/NextDay6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day#6"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/NextDay5"
+        app:layout_constraintStart_toStartOf="@id/NextDay5"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+
+    <ImageView
+        android:id="@+id/NextImage6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintStart_toEndOf="@id/NextDay6"
+        app:layout_constraintTop_toTopOf="@id/NextDay6"
+        android:layout_marginTop="-16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/NextTemp6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX°"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/NextImage6"
+        app:layout_constraintTop_toTopOf="@id/NextDay6"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/pressstart2pregular"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/startScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:elevation="2dp">
+<TextView
+    android:id="@+id/WelText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/WelText"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="300dp"
+    android:fontFamily="@font/pressstart2pregular"
+    android:padding="40dp"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textColor="#39FF14"
+    >
+</TextView>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pressstart2pregular"
+            android:text="@string/ButMes"
+            app:layout_constraintTop_toBottomOf="@+id/WelText"
+            app:layout_constraintStart_toStartOf="@+id/WelText"
+            app:layout_constraintEnd_toEndOf="@+id/WelText"
+
+            android:backgroundTint="#39FF14"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
